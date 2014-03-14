@@ -79,11 +79,11 @@ vi $ZABBIX_PATH/include/classes/api/API.php
 
 zatree首页
 
-![image](https://github.com/spide4k/zatree/raw/master/screenshots/1.jpg)
+![image](https://github.com/spide4k/zatree/zabbix-2.0.x/raw/master/screenshots/1.jpg)
 
 单个图像放大
 
-![image](https://github.com/spide4k/zatree/raw/master/screenshots/2.jpg)
+![image](https://github.com/spide4k/zatree/zabbix-2.0.x/raw/master/screenshots/2.jpg)
 
 交流
 ==================================
