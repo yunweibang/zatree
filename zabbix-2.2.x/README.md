@@ -88,11 +88,10 @@ memory_limit = XXXM
 6:搜索选项的差值是什么意思？
 在一段时间里，最大值减去最小值得到一个结果，然后用这个结果排序，这个选项对一段时间内的突发增长查看非常有用
 
-7: 解决分组只显示一个ip的问题，因为我们单位的主机名都写的是ip，你们的主机名是字符串，所以就显示不出来了
-解决方法：
-编辑zabbix_ajax.php，注释以下几行，并且保证画圈的变量名一致
-![image](https://raw.github.com/spide4k/zatree/master/zabbix-2.2.x/screenshots/3.jpg)
-
+7: 如果你的主机名都是ip，并且向排序显示，解决方法： 编辑zabbix_ajax.php 
+   43行代码注释44打开，不支持ip排序，43行代码打开44行注释，支持ip排序
+          43  $new_list[ip2long($each_host->host)]=$each_host;
+          44  //$new_list[] = $each_host;
 
 技术支持
 ==================================

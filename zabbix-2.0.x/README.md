@@ -75,6 +75,11 @@ vi $ZABBIX_PATH/include/classes/api/API.php
 7：登陆zabbix，在导航里可以看到一个Zatree的菜单，使用方法是傻瓜的
 
 
+8: 如果你的主机名都是ip，并且向排序显示，解决方法： 编辑zabbix_ajax.php 
+   43行代码注释44打开，不支持ip排序，43行代码打开44行注释，支持ip排序
+          43  $new_list[ip2long($each_host->host)]=$each_host;
+          44  //$new_list[] = $each_host;
+
 
 交流
 ==================================
