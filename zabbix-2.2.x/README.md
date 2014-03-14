@@ -14,7 +14,7 @@ ZABBIX_PATH=/var/www/zabbix
 
 复制相关文件和目录
 
-cp -rf zatree/zabbix-2.0.x $ZABBIX_PATH/zatree
+cp -rf zatree/zabbix-2.2.x $ZABBIX_PATH/zatree
 
 cd $ZABBIX_PATH/zatree/addfile
 
@@ -71,11 +71,7 @@ echo "extension=json.so" > /etc/php.d/json.ini
 
     181 <img  src="<?php echo $small_graph; ?>" width="357" height="211" style="float:left;padding-top:4px;padding-left:4px;"  /> </a>
 
-4：如果想在小图里显示时间段，编辑文件include/classes/class.cchart_zabbix.php，打开2363行
-
-     2363                 //      $this->drawDate();
-
-5:报以下错误
+4:报以下错误
 
 Warning: array_key_exists() expects parameter 2 to be array, null given in zatree/ZabbixApiAbstract.class.php on line 255
 
@@ -86,10 +82,10 @@ Warning: Invalid argument supplied for foreach() in zatree/graph.php online 130
 内存溢出，修改php.ini调整大小为XXX
 memory_limit = XXXM
 
-6:是否支持搜索多个关键字？
+5:是否支持搜索多个关键字？
 支持，关键字用逗号分隔
 
-7:搜索选项的差值是什么意思？
+6:搜索选项的差值是什么意思？
 在一段时间里，最大值减去最小值得到一个结果，然后用这个结果排序，这个选项对一段时间内的突发增长查看非常有用
 
 技术支持
