@@ -34,16 +34,6 @@ vi $ZABBIX_PATH/zatree/zabbix_config.php
 'passowrd'=>'xxx', //web登陆的密码
 
 
-屏幕截图
-==================================
-
-zatree首页
-
-![image](https://github.com/spide4k/zatree/zabbix-2.2.x/raw/master/screenshots/1.jpg)
-
-单个图像放大
-
-![image](https://github.com/spide4k/zatree/zabbix-2.2.x/raw/master/screenshots/2.jpg)
 
 交流
 ==================================

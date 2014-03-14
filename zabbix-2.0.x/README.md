@@ -74,16 +74,7 @@ vi $ZABBIX_PATH/include/classes/api/API.php
 
 7：登陆zabbix，在导航里可以看到一个Zatree的菜单，使用方法是傻瓜的
 
-屏幕截图
-==================================
 
-zatree首页
-
-![image](https://github.com/spide4k/zatree/zabbix-2.0.x/raw/master/screenshots/1.jpg)
-
-单个图像放大
-
-![image](https://github.com/spide4k/zatree/zabbix-2.0.x/raw/master/screenshots/2.jpg)
 
 交流
 ==================================
