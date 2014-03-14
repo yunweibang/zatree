@@ -58,9 +58,9 @@ class CLineGraphDraw_Zabbix extends CGraphDraw_Zabbix {
 		$this->gridPixels = 25; // optimal grid size
 		$this->gridPixelsVert = 40;
                 
-               $this->date_cell_hight=35; //新添加的变量 将日期占据的时间截去
+               $this->date_cell_hight=28; //新添加的变量 将日期占据的时间截去
                $this->img_fontsize=7;//item上显示的fontsize
-               $this->img_rowheight=12;//item上显示的rowheight
+               $this->img_rowheight=14;//item上显示的rowheight
 	}
 
 	/********************************************************************************************************/
@@ -2363,7 +2363,7 @@ class CLineGraphDraw_Zabbix extends CGraphDraw_Zabbix {
 		$this->calcPercentile();
 
 		$this->fullSizeX = $this->sizeX + $this->shiftXleft + $this->shiftXright + 1;
-		$this->fullSizeY = $this->sizeY + $this->shiftY + $this->legendOffsetY-50; //减去日期所占用的距离35
+		$this->fullSizeY = $this->sizeY + $this->shiftY + $this->legendOffsetY-35; //减去日期所占用的距离35
 
 		if ($this->drawLegend) {
 			$this->fullSizeY += 14 * ($this->num + 1 + (($this->sizeY < 120) ? 0 : count($this->triggers))) + 8;

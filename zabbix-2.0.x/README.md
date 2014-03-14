@@ -1,11 +1,3 @@
-Zatree简介
-==================================
-
-当zabbix走进千家万户的时候，我们也许需要做点什么。
-
-zatree是监控软件zabbix的一个插件，主要功能是提供host group的树形展示和在item里指定关键字查询及数据排序。
-
-测试过2.0.6和2.0.7版本，理论上2.0.X的都应该支持，如果不支持我也没办法，自己动手改改吧。
 
 Zatree安装
 ==================================
@@ -22,7 +14,7 @@ ZABBIX_PATH=/var/www/zabbix
 
 复制相关文件和目录
 
-cp -rf zatree $ZABBIX_PATH/
+cp -rf zatree/zabbix-2.0.x $ZABBIX_PATH/zatree
 
 cd $ZABBIX_PATH/zatree/addfile
 
