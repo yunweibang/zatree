@@ -93,6 +93,12 @@ memory_limit = XXXM
           43  $new_list[ip2long($each_host->host)]=$each_host;
           44  //$new_list[] = $each_host;
 
+8: 如果zabbix是2.2.1版本，有可能会报
+Call to undefined method CMacrosResolverHelper::resolveItemNames() in zabbix/include/classes/api/CLineGraphDraw_Zabbix.php on line 107
+解决方法：升级zabbix > 2.2.1
+
+
+
 技术支持
 ==================================
 
