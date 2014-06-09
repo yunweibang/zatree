@@ -19,11 +19,17 @@ cp -rf zatree/zabbix-2.2.x $ZABBIX_PATH/zatree
 cd $ZABBIX_PATH/zatree/addfile
 
 cp -f CLineGraphDraw_Zabbix.php CGraphDraw_Zabbix.php CImageTextTable_Zabbix.php $ZABBIX_PATH/include/classes/graphdraw/
+
 cp -f zabbix.php zabbix_chart.php $ZABBIX_PATH/
+
 cp -f CItemValue.php $ZABBIX_PATH/api/classes/
+
 cp -f menu.inc.php $ZABBIX_PATH/include/
+
 cp -f main.js $ZABBIX_PATH/js/
+
 cp -f API.php $ZABBIX_PATH/include/classes/api/
+
 
 3：支持web interface,修改配置文件
 
@@ -83,17 +89,21 @@ Warning: Invalid argument supplied for foreach() in zatree/graph.php online 130
 memory_limit = XXXM
 
 5:是否支持搜索多个关键字？
+
 支持，关键字用逗号分隔
 
 6:搜索选项的差值是什么意思？
+
 在一段时间里，最大值减去最小值得到一个结果，然后用这个结果排序，这个选项对一段时间内的突发增长查看非常有用
 
 7: 如果你的主机名都是ip，并且向排序显示，解决方法： 编辑zabbix_ajax.php 
+
    43行代码注释44打开，不支持ip排序，43行代码打开44行注释，支持ip排序
           43  $new_list[ip2long($each_host->host)]=$each_host;
           44  //$new_list[] = $each_host;
 
 8: 如果zabbix是2.2.1版本，有可能会报
+
 Call to undefined method CMacrosResolverHelper::resolveItemNames() in zabbix/include/classes/api/CLineGraphDraw_Zabbix.php on line 107
 解决方法：升级zabbix > 2.2.1
 
