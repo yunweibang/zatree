@@ -2591,12 +2591,14 @@ abstract class ZabbixApiAbstract
      * @throws  Exception
      */
 
-    public function hostgroupGet($params=array(), $arrayKeyProperty='')
+    public function hostgroupGet($params=array(), $arrayKeyProperty='', $sessionid='')
     {
         // get params array for request
         $params = $this->getRequestParamsArray($params);
 
         // request
+        if (isset($sessionid))
+            $this->auth = $sessionid;
         return $this->request('hostgroup.get', $params, $arrayKeyProperty);
     }
     
