@@ -30,7 +30,11 @@ if (isset($_POST['clearstatus'])) {
 
     global $zabbix_api_config;
 
-    $url_http = dirname(dirname('http://' . $_SERVER['HTTP_HOST'] . $_SERVER["REQUEST_URI"]));
+    if (!empty($zabbix_api_config['http_user']) && !empty($zabbix_api_config['http_password'])) {
+            $url_http = dirname(dirname('http://' . trim($zabbix_api_config['http_user']) . ':' . trim($zabbix_api_config['http_password']) . '@' . $_SERVER['HTTP_HOST'] . $_SERVER["REQUEST_URI"]));
+    } else {
+            $url_http = dirname(dirname('http://' . $_SERVER['HTTP_HOST'] . $_SERVER["REQUEST_URI"]));
+    }
 
     $zabbixApi = new ZabbixApi($url_http . '/' . trim($zabbix_api_config['api_url']), trim($zabbix_api_config['user']), trim($zabbix_api_config['passowrd']));
     $groupid = isset($_GET["groupid"]) ? $_GET["groupid"] : 0;
@@ -52,7 +56,11 @@ if (isset($_POST['clearstatus'])) {
         echo json_encode(array_values($new_list));
     } else {
         //查询所有的分组列表
-        $groups = $zabbixApi->hostgroupGet(array("output" => "extend", "monitored_hosts" => true));
+        if(isset($_COOKIE['zbx_sessionid'])){
+            $groups = $zabbixApi->hostgroupGet(array("output" => "extend", "monitored_hosts" => true), '', $_COOKIE['zbx_sessionid']);
+        } else {
+            $groups = $zabbixApi->hostgroupGet(array("output" => "extend", "monitored_hosts" => true));
+        }
         foreach ($groups as &$each) {
             $each->id = $each->groupid;
             $each->isParent = true;

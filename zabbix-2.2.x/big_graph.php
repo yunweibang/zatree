@@ -85,7 +85,11 @@
         global $zabbix_api_config;
         $graphid=$_GET["graphid"] ;
 
-        $url_http = dirname(dirname('http://' . $_SERVER['HTTP_HOST'] . $_SERVER["REQUEST_URI"]));
+        if (!empty($zabbix_api_config['http_user']) && !empty($zabbix_api_config['http_password'])) {
+                $url_http = dirname(dirname('http://' . trim($zabbix_api_config['http_user']) . ':' . trim($zabbix_api_config['http_password']) . '@' . $_SERVER['HTTP_HOST'] . $_SERVER["REQUEST_URI"]));
+        } else {
+                $url_http = dirname(dirname('http://' . $_SERVER['HTTP_HOST'] . $_SERVER["REQUEST_URI"]));
+        }
 
         $zabbixApi = new ZabbixApi($url_http . '/' . trim($zabbix_api_config['api_url']), trim($zabbix_api_config['user']), trim($zabbix_api_config['passowrd']));
         
