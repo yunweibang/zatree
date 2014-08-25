@@ -328,7 +328,7 @@
 
                     $big_graph = "../zabbix_chart.php?graphid=" . $result['graphid'] . "&width=" . $zoom_width . "&height=" . $zoom_height . "&stime=" . $fortime . "&period=" . $period . "&box=box.jpg";
                     $small_graph = "../zabbix_chart.php?graphid=" . $result['graphid'] . "&width=" . $width . "&height=70&stime=" . $fortime . "&period=" . $period . "&box=box.jpg";
-                    $big_graph_change = "big_graph.php?graphid=" . $result['graphid'] . "&stime=" . $stime ;
+                    $big_graph_change = "big_graph.php?graphid=" . $result['graphid'] . "&stime=" . $stime ."&endtime=".$endtime;
                     ?>
                 <div style="width:357px;float: left; text-align: left;margin: 5px 3px 0px 0px;">
                 <?php if ($orderkey == 'chazhi') { ?>
