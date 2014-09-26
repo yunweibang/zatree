@@ -52,7 +52,7 @@ if (isset($_POST['clearstatus'])) {
         echo json_encode(array_values($new_list));
     } else {
         //查询所有的分组列表
-        $groups = $zabbixApi->hostgroupGet(array("output" => "extend", "monitored_hosts" => true));
+        $groups = $zabbixApi->hostgroupGet(array("output" => "extend", "monitored_hosts" => true, "sortfield"=>"name"));
         foreach ($groups as &$each) {
             $each->id = $each->groupid;
             $each->isParent = true;
