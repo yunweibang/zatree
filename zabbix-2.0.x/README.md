@@ -170,5 +170,4 @@ QQÃ÷¬€»∫£∫271659981
 
 
 ![image](https://raw.github.com/spide4k/zatree/master/zabbix-2.0.x/screenshots/IMG_7649.JPG)
-
 ![image](https://raw.github.com/spide4k/zatree/master/zabbix-2.0.x/screenshots/IMG_7650.JPG)
