@@ -12,14 +12,10 @@ php需要支持php-xml、php-gd、php-mysql
 
 先备份当前zabbix web目录并挪走，然后解压zatree-zabbix-2.4.5.tar.gz，然后修改以下两个文件
 
-3：zabbix数据库配置
-vi conf/zabbix.conf.php
+3：zabbix数据库
+拷贝源目录的conf/zabbix.conf.php到新目录覆盖
 
-$DB['DATABASE'] = 'zabbix'; //数据库名
-
-$DB['USER']     = 'xxx';  //数据库用户名
-
-$DB['PASSWORD'] = 'xxx';   //数据库密码
+如果原来有添加字体也顺手拷贝过来
 
 4：支持web interface,修改配置文件 
 zatree/zabbix_config.php
