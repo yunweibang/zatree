@@ -35,7 +35,7 @@ QQ讨论群：271659981
 
 运维帮,一个技术分享订阅号,扫描我,给我们力量
 
-![image](https://raw.github.com/spide4k/zatree/master/zabbix-2.0.x/screenshots/yunweibang-weixin.jpg “Tks” {width=40px height=40px})
+![image](https://raw.github.com/spide4k/zatree/master/zabbix-2.0.x/screenshots/yunweibang-weixin.jpg)
 
 
 小额捐款
@@ -44,5 +44,5 @@ QQ讨论群：271659981
 
 如果你觉得zatree插件对你有帮助, 可以对作者进行小额捐款
 
-![image](https://raw.github.com/spide4k/zatree/master/zabbix-2.0.x/screenshots/IMG_7649.JPG “Tks” {width=40px height=40px})
-![image](https://raw.github.com/spide4k/zatree/master/zabbix-2.0.x/screenshots/IMG_7650.JPG “Tks” {width=40px height=40px})
+![image](https://raw.github.com/spide4k/zatree/master/zabbix-2.0.x/screenshots/IMG_7649.JPG)![image](https://raw.github.com/spide4k/zatree/master/zabbix-2.0.x/screenshots/IMG_7650.JPG)
+
