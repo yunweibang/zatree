@@ -112,6 +112,10 @@ Call to undefined method CMacrosResolverHelper::resolveItemNames() in zabbix/inc
 小额捐款
 ==================================
 
-如果你觉得zatree插件对你有帮助, <a href="http://me.alipay.com/spider4k">点击这里</a>可以对作者进行小额捐款
+如果你觉得zatree插件对你有帮助, 可以对作者进行小额捐款
 
-祝玩的愉快
+
+![image](https://raw.github.com/spide4k/zatree/master/zabbix-2.0.x/screenshots/IMG_7649.jpg)
+
+![image](https://raw.github.com/spide4k/zatree/master/zabbix-2.0.x/screenshots/IMG_7650.jpg)
+
