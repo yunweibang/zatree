@@ -33,11 +33,23 @@ zatree/zabbix_config.php
 'http_password'=>'xxx', //httpsweb登陆的密码
 
 
+定制开发zatree或zabbix
+==================================
+
+请发email到zhedou#163.com
+
 
 交流
 ==================================
 
-QQ讨论群：271659981, 微信订阅号:yunweibang
+QQ讨论群：271659981
+
+微信订阅号:yunweibang
+
+运维帮,一个技术分享订阅号,扫描我,给我们力量
+
+![image](https://raw.github.com/spide4k/zatree/master/zabbix-2.0.x/screenshots/yunweibang-weixin.jpg)
+
 
 常见问题
 ==================================

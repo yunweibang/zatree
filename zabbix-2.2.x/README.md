@@ -44,7 +44,7 @@ vi $ZABBIX_PATH/zatree/zabbix_config.php
 交流
 ==================================
 
-QQ讨论群：216490997
+QQ讨论群：271659981, 微信订阅号:yunweibang
 
 常见问题
 ==================================
@@ -107,16 +107,22 @@ memory_limit = XXXM
 Call to undefined method CMacrosResolverHelper::resolveItemNames() in zabbix/include/classes/api/CLineGraphDraw_Zabbix.php on line 107
 解决方法：升级zabbix > 2.2.1
 
-
-
-技术支持
+定制开发zatree或zabbix
 ==================================
 
-http://weibo.com/spider4k
+请发email到zhedou#163.com
 
-http://weibo.com/chinahanna
 
-http://weibo.com/678236656
+交流
+==================================
+
+QQ讨论群：271659981
+
+微信订阅号:yunweibang
+
+运维帮,一个技术分享订阅号,扫描我,给我们力量
+
+![image](https://raw.github.com/spide4k/zatree/master/zabbix-2.0.x/screenshots/yunweibang-weixin.jpg)
 
 
 小额捐款

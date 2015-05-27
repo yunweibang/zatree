@@ -20,15 +20,22 @@ zatree首页
 ![image](https://raw.github.com/spide4k/zatree/master/zabbix-2.0.x/screenshots/2.jpg)
 
 
-
-技术支持
+定制开发zatree或zabbix
 ==================================
 
-http://weibo.com/spider4k
+请发email到zhedou#163.com
 
-http://weibo.com/chinahanna
 
-http://weibo.com/678236656
+交流
+==================================
+
+QQ讨论群：271659981
+
+微信订阅号:yunweibang
+
+运维帮,一个技术分享订阅号,扫描我,给我们力量
+
+![image](https://raw.github.com/spide4k/zatree/master/zabbix-2.0.x/screenshots/yunweibang-weixin.jpg)
 
 
 小额捐款
