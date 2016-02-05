@@ -18,9 +18,3 @@ zatree首页
 单个图像放大
 
 ![image](https://raw.github.com/spide4k/zatree/master/zabbix-2.0.x/screenshots/2.jpg)
-
-
-如果你觉得zatree插件对你有帮助, 可以对作者进行小额捐款
-
-![image](https://raw.github.com/spide4k/zatree/master/zabbix-2.0.x/screenshots/IMG_7649.JPG)![image](https://raw.github.com/spide4k/zatree/master/zabbix-2.0.x/screenshots/IMG_7650.JPG)
-
