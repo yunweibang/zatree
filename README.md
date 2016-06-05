@@ -1,48 +1,20 @@
-Zatree¼ò½é
+Zatreeç®€ä»‹
 ==================================
 
-µ±zabbix×ß½øÇ§¼ÒÍò»§µÄÊ±ºò£¬ÎÒÃÇÒ²ĞíĞèÒª×öµãÊ²Ã´¡£
+å½“zabbixèµ°è¿›åƒå®¶ä¸‡æˆ·çš„æ—¶å€™ï¼Œæˆ‘ä»¬ä¹Ÿè®¸éœ€è¦åšç‚¹ä»€ä¹ˆã€‚
 
-zatreeÊÇ¼à¿ØÈí¼şzabbixµÄÒ»¸ö²å¼ş£¬Ö÷Òª¹¦ÄÜÊÇÌá¹©host groupµÄÊ÷ĞÎÕ¹Ê¾ºÍÔÚitemÀïÖ¸¶¨¹Ø¼ü×Ö²éÑ¯¼°Êı¾İÅÅĞò¡£
+zatreeæ˜¯ç›‘æ§è½¯ä»¶zabbixçš„ä¸€ä¸ªæ’ä»¶ï¼Œä¸»è¦åŠŸèƒ½æ˜¯æä¾›host groupçš„æ ‘å½¢å±•ç¤ºå’Œåœ¨itemé‡ŒæŒ‡å®šå…³é”®å­—æŸ¥è¯¢åŠæ•°æ®æ’åºã€‚
 
-°²×°·½·¨½øµ½²»Í¬°æ±¾Ä¿Â¼¿´readme
+å®‰è£…æ–¹æ³•è¿›åˆ°ä¸åŒç‰ˆæœ¬ç›®å½•çœ‹readme
 
 
-ÆÁÄ»½ØÍ¼
+å±å¹•æˆªå›¾
 ==================================
 
-zatreeÊ×Ò³
+zatreeé¦–é¡µ
 
 ![image](https://raw.github.com/spide4k/zatree/master/zabbix-2.0.x/screenshots/1.jpg)
 
-µ¥¸öÍ¼Ïñ·Å´ó
+å•ä¸ªå›¾åƒæ”¾å¤§
 
 ![image](https://raw.github.com/spide4k/zatree/master/zabbix-2.0.x/screenshots/2.jpg)
-
-
-¶¨ÖÆ¿ª·¢zatree»òzabbix
-==================================
-
-Çë·¢emailµ½zhedou#163.com
-
-
-½»Á÷
-==================================
-
-QQÌÖÂÛÈº£º271659981
-
-Î¢ĞÅ¶©ÔÄºÅ:yunweibang
-
-ÔËÎ¬°ï,Ò»¸ö¼¼Êõ·ÖÏí¶©ÔÄºÅ,É¨ÃèÎÒ,¸øÎÒÃÇÁ¦Á¿
-
-![image](https://raw.github.com/spide4k/zatree/master/zabbix-2.0.x/screenshots/yunweibang-weixin.jpg)
-
-
-Ğ¡¶î¾è¿î
-==================================
-
-
-Èç¹ûÄã¾õµÃzatree²å¼ş¶ÔÄãÓĞ°ïÖú, ¿ÉÒÔ¶Ô×÷Õß½øĞĞĞ¡¶î¾è¿î
-
-![image](https://raw.github.com/spide4k/zatree/master/zabbix-2.0.x/screenshots/IMG_7649.JPG)![image](https://raw.github.com/spide4k/zatree/master/zabbix-2.0.x/screenshots/IMG_7650.JPG)
-

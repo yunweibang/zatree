@@ -1,18 +1,18 @@
 
-Zatree for zabbix 2.2.x °²×°
+Zatree for zabbix 2.2.x å®‰è£…
 ==================================
 
-1£ºÏÂÔØÎÄ¼ş
+1ï¼šä¸‹è½½æ–‡ä»¶
 
 git clone https://github.com/spide4k/zatree.git zatree
 
-2£º¸´ÖÆÏà¹ØÎÄ¼ş
+2ï¼šå¤åˆ¶ç›¸å…³æ–‡ä»¶
 
-¼ÙÈçzabbix webÄ¿Â¼Î»ÖÃÔÚ/var/www/zabbix,¶¨ÒåzabbixÄ¿Â¼
+å‡å¦‚zabbix webç›®å½•ä½ç½®åœ¨/var/www/zabbix,å®šä¹‰zabbixç›®å½•
 
 ZABBIX_PATH=/var/www/zabbix
 
-¸´ÖÆÏà¹ØÎÄ¼şºÍÄ¿Â¼
+å¤åˆ¶ç›¸å…³æ–‡ä»¶å’Œç›®å½•
 
 cp -rf zatree/zabbix-2.2.x $ZABBIX_PATH/zatree
 
@@ -31,41 +31,36 @@ cp -f main.js $ZABBIX_PATH/js/
 cp -f API.php $ZABBIX_PATH/include/classes/api/
 
 
-3£ºÖ§³Öweb interface,ĞŞ¸ÄÅäÖÃÎÄ¼ş
+3ï¼šæ”¯æŒweb interface,ä¿®æ”¹é…ç½®æ–‡ä»¶
 
 vi $ZABBIX_PATH/zatree/zabbix_config.php
 
-'user'=>'xxx', //webµÇÂ½µÄÓÃ»§Ãû
+'user'=>'xxx', //webç™»é™†çš„ç”¨æˆ·å
 
-'passowrd'=>'xxx', //webµÇÂ½µÄÃÜÂë
+'passowrd'=>'xxx', //webç™»é™†çš„å¯†ç 
 
 
 
-½»Á÷
+å¸¸è§é—®é¢˜
 ==================================
 
-QQÌÖÂÛÈº£º271659981, Î¢ĞÅ¶©ÔÄºÅ:yunweibang
+1ï¼šå¦‚ä½•æ’é”™ï¼Ÿ
 
-³£¼ûÎÊÌâ
-==================================
-
-1£ºÈçºÎÅÅ´í£¿
-
-¿ÉÒÔ´ò¿ªphpµÄÏÔÊ¾´íÎó£¬¿´¿´Ê²Ã´Ô­Òò
+å¯ä»¥æ‰“å¼€phpçš„æ˜¾ç¤ºé”™è¯¯ï¼Œçœ‹çœ‹ä»€ä¹ˆåŸå› 
 
 vi /etc/php.ini
 
 display_errors = On
 
-ÖØÆôweb server,È»ºó¼à¿ØwebÈÕÖ¾
+é‡å¯web server,ç„¶åç›‘æ§webæ—¥å¿—
 
-2£ºFatal error: Call to undefined function json_encode() in /var/www/html/zabbix/zatree/ZabbixApiAbstract.class.php on line 220
+2ï¼šFatal error: Call to undefined function json_encode() in /var/www/html/zabbix/zatree/ZabbixApiAbstract.class.php on line 220
 
-ĞèÒªphp encodeÖ§³Ö
+éœ€è¦php encodeæ”¯æŒ
 
 yum install php-pecl-json
 
-Èç¹ûÉÏÃæÕâ¸ö·½·¨²»ĞĞ£¬ÕÒ²»µ½php-pecl-json£¬ÊÔÊÔÏÂÃæÕâ¸ö·½·¨
+å¦‚æœä¸Šé¢è¿™ä¸ªæ–¹æ³•ä¸è¡Œï¼Œæ‰¾ä¸åˆ°php-pecl-jsonï¼Œè¯•è¯•ä¸‹é¢è¿™ä¸ªæ–¹æ³•
 
 yum install php-pear
 
@@ -73,11 +68,11 @@ pecl install json
 
 echo "extension=json.so" > /etc/php.d/json.ini
 
-3£ºÈç¹ûÓÒ²àÏÔÊ¾Ò»ĞĞ2¸öÍ¼£¬ËµÃ÷Äã·Ö±æÂÊ²»¹»£¬½ĞÀÏ°å¸øÄã»»¸ö»úÆ÷£¬»òÕßĞŞ¸Ägraph.phpÎÄ¼şÕâĞĞµÄwidthÖµ
+3ï¼šå¦‚æœå³ä¾§æ˜¾ç¤ºä¸€è¡Œ2ä¸ªå›¾ï¼Œè¯´æ˜ä½ åˆ†è¾¨ç‡ä¸å¤Ÿï¼Œå«è€æ¿ç»™ä½ æ¢ä¸ªæœºå™¨ï¼Œæˆ–è€…ä¿®æ”¹graph.phpæ–‡ä»¶è¿™è¡Œçš„widthå€¼
 
     181 <img  src="<?php echo $small_graph; ?>" width="357" height="211" style="float:left;padding-top:4px;padding-left:4px;"  /> </a>
 
-4:±¨ÒÔÏÂ´íÎó
+4:æŠ¥ä»¥ä¸‹é”™è¯¯
 
 Warning: array_key_exists() expects parameter 2 to be array, null given in zatree/ZabbixApiAbstract.class.php on line 255
 
@@ -85,50 +80,25 @@ Notice: Trying to get property of non-object in zatree/ZabbixApiAbstract.class.p
 
 Warning: Invalid argument supplied for foreach() in zatree/graph.php online 130
 
-ÄÚ´æÒç³ö£¬ĞŞ¸Äphp.iniµ÷Õû´óĞ¡ÎªXXX
+å†…å­˜æº¢å‡ºï¼Œä¿®æ”¹php.iniè°ƒæ•´å¤§å°ä¸ºXXX
 memory_limit = XXXM
 
-5:ÊÇ·ñÖ§³ÖËÑË÷¶à¸ö¹Ø¼ü×Ö£¿
+5:æ˜¯å¦æ”¯æŒæœç´¢å¤šä¸ªå…³é”®å­—ï¼Ÿ
 
-Ö§³Ö£¬¹Ø¼ü×ÖÓÃ¶ººÅ·Ö¸ô
+æ”¯æŒï¼Œå…³é”®å­—ç”¨é€—å·åˆ†éš”
 
-6:ËÑË÷Ñ¡ÏîµÄ²îÖµÊÇÊ²Ã´ÒâË¼£¿
+6:æœç´¢é€‰é¡¹çš„å·®å€¼æ˜¯ä»€ä¹ˆæ„æ€ï¼Ÿ
 
-ÔÚÒ»¶ÎÊ±¼äÀï£¬×î´óÖµ¼õÈ¥×îĞ¡ÖµµÃµ½Ò»¸ö½á¹û£¬È»ºóÓÃÕâ¸ö½á¹ûÅÅĞò£¬Õâ¸öÑ¡Ïî¶ÔÒ»¶ÎÊ±¼äÄÚµÄÍ»·¢Ôö³¤²é¿´·Ç³£ÓĞÓÃ
+åœ¨ä¸€æ®µæ—¶é—´é‡Œï¼Œæœ€å¤§å€¼å‡å»æœ€å°å€¼å¾—åˆ°ä¸€ä¸ªç»“æœï¼Œç„¶åç”¨è¿™ä¸ªç»“æœæ’åºï¼Œè¿™ä¸ªé€‰é¡¹å¯¹ä¸€æ®µæ—¶é—´å†…çš„çªå‘å¢é•¿æŸ¥çœ‹éå¸¸æœ‰ç”¨
 
-7: Èç¹ûÄãµÄÖ÷»úÃû¶¼ÊÇip£¬²¢ÇÒÏòÅÅĞòÏÔÊ¾£¬½â¾ö·½·¨£º ±à¼­zabbix_ajax.php 
+7: å¦‚æœä½ çš„ä¸»æœºåéƒ½æ˜¯ipï¼Œå¹¶ä¸”å‘æ’åºæ˜¾ç¤ºï¼Œè§£å†³æ–¹æ³•ï¼š ç¼–è¾‘zabbix_ajax.php 
 
-   43ĞĞ´úÂë×¢ÊÍ44´ò¿ª£¬²»Ö§³ÖipÅÅĞò£¬43ĞĞ´úÂë´ò¿ª44ĞĞ×¢ÊÍ£¬Ö§³ÖipÅÅĞò
+   43è¡Œä»£ç æ³¨é‡Š44æ‰“å¼€ï¼Œä¸æ”¯æŒipæ’åºï¼Œ43è¡Œä»£ç æ‰“å¼€44è¡Œæ³¨é‡Šï¼Œæ”¯æŒipæ’åº
           43  $new_list[ip2long($each_host->host)]=$each_host;
           44  //$new_list[] = $each_host;
 
-8: Èç¹ûzabbixÊÇ2.2.1°æ±¾£¬ÓĞ¿ÉÄÜ»á±¨
+8: å¦‚æœzabbixæ˜¯2.2.1ç‰ˆæœ¬ï¼Œæœ‰å¯èƒ½ä¼šæŠ¥
 
 Call to undefined method CMacrosResolverHelper::resolveItemNames() in zabbix/include/classes/api/CLineGraphDraw_Zabbix.php on line 107
-½â¾ö·½·¨£ºÉı¼¶zabbix > 2.2.1
+è§£å†³æ–¹æ³•ï¼šå‡çº§zabbix > 2.2.1
 
-¶¨ÖÆ¿ª·¢zatree»òzabbix
-==================================
-
-Çë·¢emailµ½zhedou#163.com
-
-
-½»Á÷
-==================================
-
-QQÌÖÂÛÈº£º271659981
-
-Î¢ĞÅ¶©ÔÄºÅ:yunweibang
-
-ÔËÎ¬°ï,Ò»¸ö¼¼Êõ·ÖÏí¶©ÔÄºÅ,É¨ÃèÎÒ,¸øÎÒÃÇÁ¦Á¿
-
-![image](https://raw.github.com/spide4k/zatree/master/zabbix-2.0.x/screenshots/yunweibang-weixin.jpg)
-
-
-Ğ¡¶î¾è¿î
-==================================
-
-
-Èç¹ûÄã¾õµÃzatree²å¼ş¶ÔÄãÓĞ°ïÖú, ¿ÉÒÔ¶Ô×÷Õß½øĞĞĞ¡¶î¾è¿î
-
-![image](https://raw.github.com/spide4k/zatree/master/zabbix-2.0.x/screenshots/IMG_7649.JPG)![image](https://raw.github.com/spide4k/zatree/master/zabbix-2.0.x/screenshots/IMG_7650.JPG)
